@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
 <body>
 	<header class="header">
 		<div class="header-logo">
@@ -40,7 +40,8 @@
 	</nav>
 	<main class="dashboard">
 		<div class="dashboard-header">Dashboard
-			<div class="dashboard-header-cogwheel"></div>
+			<div class="dashboard-header-cogwheel">
+			</div>
 		</div>
 		<ul class="dashboard-statistics">
 			<li class="dashboard-statistics-item">
@@ -91,8 +92,8 @@
 		<div class="dashboard-players clearfix">
 			<section class="dashboard-players-recent">
 				<div class="dashboard-players-recent-nav">
-					<a href="" class="dashboard-players-recent-nav-item prev">x</a>
-					<a href="" class="dashboard-players-recent-nav-item next">x</a>
+					<a href="" class="dashboard-players-recent-nav-item prev"></a>
+					<a href="" class="dashboard-players-recent-nav-item next"></a>
 				</div>
 				<h2 class="dashboard-players-recent-header">Recent players</h2>
 				<ul class="dashboard-players-recent-list">
@@ -164,7 +165,22 @@
 			<section class="dashboard-players-statistics">
 				<h2 class="dashboard-players-statistics-header">Player statistics</h2>
 				<div class="dashboard-players-statistics-list">
-					<div class="dashboard-players-statistics-list-item"></div>
+					<div class="dashboard-players-statistics-list-item">
+						<div id = "" class="dashboard-players-statistics-list-item-circle circle-chart" data-dimension="225" data-text="58%" data-width="20" data-fontsize="44" data-percent="58" data-fgcolor="#59606d" data-bgcolor="#d2d3d6"></div>
+						<div class="dashboard-players-statistics-list-item-name">New Players</div>
+					</div>
+					<div class="dashboard-players-statistics-list-item">
+						<div id = "" class="dashboard-players-statistics-list-item-circle circle-chart" data-dimension="225" data-text="75%" data-width="20" data-fontsize="44" data-percent="75" data-fgcolor="#a0c370" data-bgcolor="#d2d3d6"></div>
+						<div class="dashboard-players-statistics-list-item-name">New Players</div>
+					</div>
+					<div class="dashboard-players-statistics-list-item">
+						<div id = "" class="dashboard-players-statistics-list-item-circle circle-chart" data-dimension="225" data-text="28%" data-width="20" data-fontsize="44" data-percent="28" data-fgcolor="#59606d" data-bgcolor="#d2d3d6"></div>
+						<div class="dashboard-players-statistics-list-item-name">New Players</div>
+					</div>
+					<div class="dashboard-players-statistics-list-item">
+						<div id = "" class="dashboard-players-statistics-list-item-circle circle-chart" data-dimension="225" data-text="97%" data-width="20" data-fontsize="44" data-percent="97" data-fgcolor="#a0c370" data-bgcolor="#d2d3d6"></div>
+						<div class="dashboard-players-statistics-list-item-name">New Players</div>
+					</div>
 				</div>
 			</section>
 		</div>
@@ -172,6 +188,8 @@
 
 
 <script src="js/charts.js"></script>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/jquery.circliful.js"></script>
 <script src="js/main.js"></script>
 
 

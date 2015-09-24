@@ -1,28 +1,16 @@
 .dashboard-players-recent{
 	float: left;
 	height: $dashboard_players_height;
-	margin-right: 5px;
-	padding-left: 70px;
-	width: 1200px;
+	width: $dashboard-item-width;
 	position: relative;
 
-
 	&-header{
-		color: $dashboard_text_color;
-		font-family: 'Avenir Medium';
-		font-size: 28px;
+		@include header();
 		margin-bottom: 65px;
 	}
 
 	&-nav{
-		margin-top: 10px;
-		border-radius: 4px;
-		border: 1px solid #dededd;
-		display: block;
-		float: right;
-		height: 40px;
-		overflow: hidden;
-		width: 100px;
+		@include item-nav();
 
 
 
@@ -33,21 +21,38 @@
 			text-align: center;
 			text-decoration: none;
 			width: 50%;
+			height: 100%;
+			color: $dashboard_text_color_light;
+			font-family: 'FontAwesome';
+			position: relative;
+
+			&::before{
+				content: '\f0d9';
+				position: absolute;
+				top: center;
+				left: 22px;
+			}
 
 			&.prev{
-				border-right: 1px solid #dededd;
+				border-right: 1px solid $dashboard_nav_border;
 			}
+			&.next::before{
+				content: '\f0da';
+			}
+
 		}
 	}
+
 
 	&-list{
 		@include ul-reset();
 		display: block;
 		
 		&-item{
+			display: inline-block;
 			height: 150px;
 			margin-right: -4px;
-			width: 400px;
+			width: 390px;
 
 			&-img{
 				border-radius: 50%;

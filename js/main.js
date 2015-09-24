@@ -1,5 +1,6 @@
-var ctx = document.getElementById("chart1").getContext("2d");
+$('.circle-chart').circliful();
 
+var ctx = document.getElementById("chart1").getContext("2d");
 var g = Chart.defaults.global;
 g.scaleBeginAtZero = false;
 g.scaleFontColor = "#9FA0A4";
@@ -10,8 +11,6 @@ g.scaleStepWidth = 10;
 g.scaleStartValue = 0;
 g.scaleFontFamily = 'Avenir Medium';
 g.scaleFontSize = 24;
-
-
 var data = {
     labels: ["MON", "TUE", "WED", "THU", "FRI", "SAT", "SAN"],
     datasets: [
@@ -27,9 +26,6 @@ var data = {
         }
     ]
 };
-
-
-
 var options = {
     //String - Colour of the grid lines
     scaleGridLineColor : '#CACACA',
@@ -42,12 +38,9 @@ var options = {
     //Number - amount extra to add to the radius to cater for hit detection outside the drawn point
     pointHitDetectionRadius : 20
 };
-
 var myLineChart = new Chart(ctx).Line(data, options);
 
 var ctx = document.getElementById("chart2").getContext("2d");
-
-
 var data = {
     labels: ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL"],
     datasets: [
@@ -63,7 +56,7 @@ var data = {
         }
     ]
 };
-
 g.scaleStepWidth = 150;
-
 var myLineChart = new Chart(ctx).Line(data, options);
+
+
