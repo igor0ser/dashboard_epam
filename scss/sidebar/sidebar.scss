@@ -1,0 +1,56 @@
+.sidebar{
+	background: $sidebar_background;
+	float: left;
+	width: $sidebar_width;
+	height: 1820px;
+	padding-top: $header_height+20;
+
+	&-item{
+		height: 110px;
+		text-align: center;
+		cursor: pointer;
+		position: relative;
+		box-sizing: border-box;
+		padding-top: 40px;
+
+		&:first-child{
+			height: 144px;
+		}
+
+		&.active::after{
+			content: '';
+			position: absolute;
+			border: 20px solid transparent;	
+			border-right: 20px solid #fff;
+			top: 35px;
+			right: 0;
+
+		}
+		&-icon{
+			margin: auto;
+			@include sprite($sprite-dashboard);
+			
+
+			&-profile{
+				@include sprite($sprite-profile);
+			}
+			&-write{
+				@include sprite($sprite-write);
+			}
+			&-calendar{
+				@include sprite($sprite-calendar);
+			}
+			&-notes{
+				@include sprite($sprite-notes);
+			}
+			&-comments{
+				@include sprite($sprite-comments);
+			}
+			&-graph{
+				@include sprite($sprite-graph);
+			}
+
+
+		}
+	}
+}
