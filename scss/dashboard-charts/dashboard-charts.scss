@@ -8,12 +8,13 @@
 		box-sizing: border-box;
 		float: left;
 		height: 750px;
-		padding-top: 60px;
+		padding-top: 28px;
 		width: $dashboard-item-width;
 
 		&-header{
 			@include header();
-			margin-bottom: 80px;
+			margin-bottom: 70px;
+			padding-left: 8px;
 		}
 
 		&-menu{
@@ -28,7 +29,7 @@
 				cursor: pointer;
 				display: block;
 				font-family: 'Avenir Medium';
-				font-size: 16px;
+				font-size: 20px;
 				height: 40px;
 				line-height: 40px;
 				padding-left: 20px;
@@ -60,7 +61,7 @@
 		}
 
 		&-canvas{
-			height: 500px;
+			height: 480px;
 			width: 1120px;
 		}
 

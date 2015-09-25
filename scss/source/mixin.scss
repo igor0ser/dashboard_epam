@@ -13,8 +13,8 @@
 
 @mixin header(){
 	color: $dashboard_text_color;
-	font-family: 'Avenir Medium';
-	font-size: 28px;
+	font-family: $font_roman;
+	font-size: 35px;
 }
 
 @mixin item-nav(){
@@ -22,7 +22,7 @@
 	border: 1px solid $dashboard_nav_border;
 	float: right;
 	height: 40px;
-	margin-right: 60px;
-	margin-top: 10px;
+	margin-right: 40px;
+	margin-top: 22px;
 	width: 100px;
 }
