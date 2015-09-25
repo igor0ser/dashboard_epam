@@ -10,11 +10,11 @@
 		border-left: 6px solid $sidebar_background;
 		box-sizing: border-box;
 		display: inline-block;
-		font-family: 'Avenir Roman';
-		height: 113px;
-		margin: 42px -4px 50px;
-		padding-left: 40px; 
-		padding-top: 10px;
+		font-family: $font_roman;
+		height: 110px;
+		margin: 37px -4px 50px;
+		padding-left: 34px; 
+		padding-top: 0px;
 		width: 395px;
 
 		&:first-child{
@@ -31,12 +31,14 @@
 
 		&-number{
 			color: $dashboard_text_color;
-			font-size: 50px;
+			font-size: 70px;
+			line-height: 70px;
+			margin-bottom: 5px;
 		}
 
 		&-text{
 			color: $dashboard_text_color_light;
-			font-size: 22px;
+			font-size: 28px;
 		}
 	}
 }

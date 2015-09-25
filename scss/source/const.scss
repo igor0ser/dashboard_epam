@@ -22,16 +22,20 @@ $dashboard_text_color_light: #bec1c6;
 	//sizes
 
 $header_height: 135px;
+$header_width: 2650px;
 $sidebar_width: 160px;
-$dashboard_width: 2600px - $sidebar_width;
+$dashboard_width: $header_width - $sidebar_width;
 $dashboard_charts_height: 750px;
 $dashboard_players_height: 590px;
 $dashboard-item-width: 1180px;
-
+$header_font_size: 28px;
 
 	//fonts
-$header_font_size: 20px;
-
+$font_awesome: 'FontAwesome';
+$font_light: 'Avenir Light';
+$font_roman: 'Avenir Roman';
+$font_medium: 'Avenir Medium';
+$fomt_book: 'Avenir Book';
 
 	//url
 $sprite_url: url('../img/sprite.png');
