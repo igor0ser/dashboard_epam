@@ -1,9 +1,10 @@
 .dashboard-charts{
-		padding-left: 70px;
+
 		background: $dashboard_background;
 		height: $dashboard_charts_height;
 
 	&-item{
+		padding-left: 70px;
 		background: $dashboard_background;
 		box-sizing: border-box;
 		float: left;
@@ -15,6 +16,7 @@
 			@include header();
 			margin-bottom: 70px;
 			padding-left: 8px;
+
 		}
 
 		&-menu{

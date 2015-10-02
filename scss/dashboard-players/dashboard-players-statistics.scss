@@ -1,12 +1,14 @@
 .dashboard-players-statistics{
-	float: right;
+	float: left;
 	height: $dashboard_players_height;
 	width: 1160px;
 
 
 	&-header{
 		@include header();
-		margin-bottom: 100px;
+		margin-top: 34px;
+		margin-bottom: 85px;
+		margin-left: 5px;
 	}
 
 
@@ -14,10 +16,14 @@
 	&-list{
 			&-item{
 				display: inline-block;
-				width: 230px;
+				width: 240px;
 				height: 330px;
-				margin-right: 70px;
+				margin-right: 60px;
 				vertical-align: top;
+
+				&:first-child{
+					margin-left: -15px;
+				}
 
 				&:last-child{
 					margin-right: 0;
@@ -25,9 +31,9 @@
 
 				&-name{
 					text-align: center;
-					font-size: 25px;
+					font-size: 34px;
 					color: $dashboard_text_color;
-					margin-top: 30px;
+					margin-top: 24px;
 				}
 			}
 	}

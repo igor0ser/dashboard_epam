@@ -74,7 +74,7 @@ body {
   color: #999; }
 
 .circliful .fa {
-  margin: -10px 3px 0 3px;
+  margin: 0;
   position: relative;
   bottom: 4px; }
 
@@ -301,16 +301,16 @@ body {
       font-size: 28px; }
 
 .dashboard-charts {
-  padding-left: 70px;
   background: #f2f2f3;
   height: 750px; }
   .dashboard-charts-item {
+    padding-left: 70px;
     background: #f2f2f3;
     box-sizing: border-box;
     float: left;
     height: 750px;
     padding-top: 28px;
-    width: 1180px; }
+    width: 1210px; }
     .dashboard-charts-item-header {
       color: #6d737b;
       font-family: "Avenir Roman";
@@ -325,9 +325,9 @@ body {
       border: 1px solid #dededd;
       float: right;
       height: 40px;
-      margin-right: 40px;
-      margin-top: 22px;
-      width: 100px;
+      margin-top: 24px;
+      margin-right: 0px;
+      width: auto;
       display: block;
       overflow: hidden;
       transition: 0.4s; }
@@ -360,27 +360,32 @@ body {
 
 .dashboard-players {
   height: 590px;
-  background: #f2f2f3;
-  padding-left: 70px; }
+  background: #f2f2f3; }
 
 .dashboard-players-recent {
   float: left;
   height: 590px;
-  width: 1180px;
-  position: relative; }
+  width: 1210px;
+  position: relative;
+  padding-left: 70px; }
   .dashboard-players-recent-header {
     color: #6d737b;
     font-family: "Avenir Roman";
     font-size: 35px;
-    margin-bottom: 65px; }
+    margin-bottom: 63px;
+    margin-left: 10px;
+    margin-top: 34px; }
   .dashboard-players-recent-nav {
     border-radius: 4px;
     border: 1px solid #dededd;
     float: right;
     height: 40px;
-    margin-right: 40px;
-    margin-top: 22px;
-    width: 100px; }
+    margin-top: 24px;
+    margin-right: 0px;
+    width: auto;
+    width: 76px;
+    margin-right: 68px;
+    margin-top: 38px; }
     .dashboard-players-recent-nav-item {
       display: inline-block;
       line-height: 40px;
@@ -396,7 +401,7 @@ body {
         content: '\f0d9';
         position: absolute;
         top: center;
-        left: 22px; }
+        left: center; }
       .dashboard-players-recent-nav-item.prev {
         border-right: 1px solid #dededd; }
       .dashboard-players-recent-nav-item.next::before {
@@ -408,44 +413,50 @@ body {
     display: block; }
     .dashboard-players-recent-list-item {
       display: inline-block;
-      height: 150px;
+      height: 145px;
       margin-right: -4px;
-      width: 390px; }
+      width: 404px; }
       .dashboard-players-recent-list-item-img {
         border-radius: 50%;
         float: left;
-        height: 92px;
-        width: 92px; }
+        height: 91px;
+        width: 91px; }
       .dashboard-players-recent-list-item-text {
         color: #bec1c6;
         float: left;
-        margin-left: 30px; }
+        margin-left: 27px; }
         .dashboard-players-recent-list-item-text-name {
-          font-size: 23px;
-          line-height: 54px; }
+          font-size: 26px;
+          line-height: 48px;
+          letter-spacing: 0.03em; }
         .dashboard-players-recent-list-item-text-country {
-          font-style: 23px;
-          line-height: 23px; }
+          font-size: 23px;
+          line-height: 32px;
+          letter-spacing: 0.02em; }
 
 .dashboard-players-statistics {
-  float: right;
+  float: left;
   height: 590px;
   width: 1160px; }
   .dashboard-players-statistics-header {
     color: #6d737b;
     font-family: "Avenir Roman";
     font-size: 35px;
-    margin-bottom: 100px; }
+    margin-top: 34px;
+    margin-bottom: 85px;
+    margin-left: 5px; }
   .dashboard-players-statistics-list-item {
     display: inline-block;
-    width: 230px;
+    width: 240px;
     height: 330px;
-    margin-right: 70px;
+    margin-right: 60px;
     vertical-align: top; }
+    .dashboard-players-statistics-list-item:first-child {
+      margin-left: -15px; }
     .dashboard-players-statistics-list-item:last-child {
       margin-right: 0; }
     .dashboard-players-statistics-list-item-name {
       text-align: center;
-      font-size: 25px;
+      font-size: 34px;
       color: #6d737b;
-      margin-top: 30px; }
+      margin-top: 24px; }
