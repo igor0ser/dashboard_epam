@@ -507,7 +507,7 @@
 			var labelsArray = new Array(numberOfSteps);
 			if (labelTemplateString){
 				each(labelsArray,function(val,index){
-					labelsArray[index] = template(templateString,{value: (graphMin + (stepValue*(index+1)))});
+					labelsArray[index] = template(templateString,{value: (graphMin+ (stepValue*(index+1)))});
 				});
 			}
 			return labelsArray;
@@ -2796,8 +2796,8 @@
 					}
 				},this);
 
-				dataset.points[0].x =+ 130;
-				dataset.points[dataset.points.length-1].x = dataset.points[dataset.points.length-1].x - 90;
+				dataset.points[0].x =+ 110;
+				dataset.points[dataset.points.length-1].x = dataset.points[dataset.points.length-1].x - 70;
 
 				// Control points need to be calculated in a seperate loop, because we need to know the current x/y of the point
 				// This would cause issues when there is no animation, because the y of the next point would be 0, so beziers would be skewed

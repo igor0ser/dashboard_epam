@@ -445,6 +445,37 @@ body {
     margin-top: 34px;
     margin-bottom: 85px;
     margin-left: 5px; }
+  .dashboard-players-statistics-nav {
+    border-radius: 4px;
+    border: 1px solid #dededd;
+    float: right;
+    height: 40px;
+    margin-top: 24px;
+    margin-right: 0px;
+    width: auto;
+    width: 76px;
+    margin-right: 20px;
+    margin-top: 38px; }
+    .dashboard-players-statistics-nav-item {
+      display: inline-block;
+      line-height: 40px;
+      margin-right: -5px;
+      text-align: center;
+      text-decoration: none;
+      width: 50%;
+      height: 100%;
+      color: #bec1c6;
+      font-family: 'FontAwesome';
+      position: relative; }
+      .dashboard-players-statistics-nav-item::before {
+        content: '\f0d9';
+        position: absolute;
+        top: center;
+        left: center; }
+      .dashboard-players-statistics-nav-item.prev {
+        border-right: 1px solid #dededd; }
+      .dashboard-players-statistics-nav-item.next::before {
+        content: '\f0da'; }
   .dashboard-players-statistics-list-item {
     display: inline-block;
     width: 240px;

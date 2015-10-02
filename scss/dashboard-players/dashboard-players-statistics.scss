@@ -12,6 +12,40 @@
 	}
 
 
+	&-nav{
+		@include item-nav();
+		width: 76px;
+		margin-right: 20px;
+		margin-top: 38px;
+
+		&-item{
+			display: inline-block;
+			line-height: 40px;
+			margin-right: -5px;
+			text-align: center;
+			text-decoration: none;
+			width: 50%;
+			height: 100%;
+			color: $dashboard_text_color_light;
+			font-family: 'FontAwesome';
+			position: relative;
+
+			&::before{
+				content: '\f0d9';
+				position: absolute;
+				top: center;
+				left: center;
+			}
+
+			&.prev{
+				border-right: 1px solid $dashboard_nav_border;
+			}
+			&.next::before{
+				content: '\f0da';
+			}
+
+		}
+	}
 
 	&-list{
 			&-item{

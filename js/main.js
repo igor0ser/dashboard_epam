@@ -11,8 +11,9 @@ g.scaleStepWidth = 10;
 g.scaleStartValue = 0;
 g.scaleFontFamily = 'Avenir Medium';
 g.scaleFontSize = 24;
+
 var data = {
-    labels: ["MON", "TUE", "WED", "THU", "FRI", "SAT", "SAN"],
+    labels: ["MON", "TUE", "WED", "THU", "FRI", "SAT", "SAN", ""],
     datasets: [
         {
             label: "Active players",
@@ -22,7 +23,7 @@ var data = {
             pointStrokeColor: "#4e7c7c",
             pointHighlightFill: "#9EBC74",
             pointHighlightStroke: "fff",
-            data: [40, 25, 30, 50, 30, 27, 40]
+            data: [40, 25, 30, 50, 30, 27, 40, 20]
         }
     ]
 };
@@ -42,7 +43,7 @@ var myLineChart = new Chart(ctx).Line(data, options);
 
 var ctx = document.getElementById("chart2").getContext("2d");
 var data = {
-    labels: ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL"],
+    labels: ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", ""],
     datasets: [
         {
             label: "Active players",
@@ -52,7 +53,7 @@ var data = {
             pointStrokeColor: "#28374c",
             pointHighlightFill: "#9EBC74",
             pointHighlightStroke: "fff",
-            data: [450, 750, 900, 450, 600, 650, 300]
+            data: [450, 750, 600, 900, 450, 600, 650, 300]
         }
     ]
 };
