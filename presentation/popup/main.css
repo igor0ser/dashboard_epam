@@ -1,0 +1,411 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url(http://fonts.googleapis.com/css?family=Carter+One);
+
+body {
+  font-family: "Open Sans", sans-serif, Arial;
+}
+
+*{
+  ouline: none;
+}
+
+.clearfix::after {
+  visibility: hidden;
+  display: block;
+  content: "";
+  clear: both;
+  height: 0;
+}
+
+.animated,
+.dark,
+.authorization,
+.authorization-reg-form-error {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated05 {
+  -webkit-animation-duration: .4s;
+  animation-duration: .4s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn,
+.dark,
+.authorization-reg-form-error {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInDown,
+.authorization {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
+
+@-webkit-keyframes fadeOutUp {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+@keyframes fadeOutUp {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+.animated.fadeOutUp,
+.fadeOutUp.dark,
+.fadeOutUp.authorization,
+.fadeOutUp.authorization-reg-form-error {
+  -webkit-animation-name: fadeOutUp;
+  animation-name: fadeOutUp;
+}
+
+.dark {
+  width: 100%;
+  min-height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  position: fixed;
+  top: 0px;
+  z-index: 5000;
+}
+
+.authorization {
+  background: #fff;
+  width: 320px;
+  height: auto;
+  padding: 5px;
+  position: absolute;
+  top: 35%;
+  left: 15%;
+  margin: -115px 0 0 -160px;
+  z-index: 5001;
+  border-radius: 4px;
+}
+
+.authorization input {
+  outline: none;
+}
+
+.authorization-reg-form {
+  display: block;
+  width: 320px;
+  box-sizing: border-box;
+  padding: 20px;
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif, Arial;
+}
+
+.authorization-reg-form-header {
+  color: #333;
+  font-size: 14px;
+  line-height: 14px;
+  margin: 0;
+  font-weight: normal;
+  padding-bottom: 15px;
+  margin-bottom: 25px;
+}
+
+.authorization-reg-form-sign-in {
+  text-decoration: none;
+  color: #91cf26;
+  float: right;
+  margin-top: -2px;
+}
+
+.authorization-reg-form-input {
+  height: 40px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px dashed #e5e5e5;
+  margin-bottom: 25px;
+}
+
+.authorization-reg-form-input:invalid,
+.authorization-reg-form-input:-moz-submit-invalid,
+.authorization-reg-form-input:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+.authorization-reg-form-error {
+  box-sizing: border-box;
+  height: 22px;
+  border: 1px solid #f85d49;
+  color: #f85d49;
+  font-weight: bold;
+  line-height: 22px;
+  font-size: 12px;
+  padding: 0 5px;
+  margin: -22px 0 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.authorization-reg-form-error:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  border-bottom: 1px dashed #e5e5e5;
+  bottom: -7px;
+  left: 0;
+}
+
+.authorization-reg-form-checkbox {
+  display: block;
+  float: left;
+  margin-top: 24px;
+}
+
+.authorization-reg-form-checklabel {
+  display: block;
+  float: left;
+  height: 28px;
+  line-height: 28px;
+  margin-top: 17px;
+}
+
+.authorization-reg-form-submit {
+  height: 28px;
+  line-height: 28px;
+  width: 100px;
+  background: #f85d49;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  float: right;
+  margin-top: 17px;
+}
+
+.authorization-sign-in-form {
+  display: block;
+  width: 320px;
+  box-sizing: border-box;
+  padding: 20px;
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif, Arial;
+}
+
+.authorization-sign-in-form-header {
+  color: #333;
+  font-size: 14px;
+  line-height: 14px;
+  margin: 0;
+  font-weight: normal;
+  margin-bottom: 25px;
+}
+
+.authorization-sign-in-form-reg {
+  text-decoration: none;
+  color: #91cf26;
+  float: right;
+  margin-top: -2px;
+}
+
+.authorization-sign-in-form-input {
+  height: 40px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px dashed #e5e5e5;
+  margin-bottom: 25px;
+}
+
+.authorization-sign-in-form-input:invalid,
+.authorization-sign-in-form-input:-moz-submit-invalid,
+.authorization-sign-in-form-input:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+.authorization-sign-in-form-checkbox {
+  display: block;
+  float: left;
+  margin-top: 24px;
+}
+
+.authorization-sign-in-form-checklabel {
+  display: block;
+  float: left;
+  height: 28px;
+  line-height: 28px;
+  margin-top: 17px;
+}
+
+.authorization-sign-in-form-submit {
+  height: 28px;
+  line-height: 28px;
+  width: 100px;
+  background: #f85d49;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  float: right;
+  margin-top: 17px;
+}
+
+.authorization-success {
+  width: 320px;
+  height: auto;
+  box-sizing: border-box;
+  padding: 20px;
+  font-family: "Open Sans", sans-serif, Arial;
+}
+
+.authorization-success-text {
+  color: #91cf26;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.authorization-success-submit {
+  height: 28px;
+  line-height: 28px;
+  width: 100px;
+  background: #f85d49;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  float: right;
+  margin-top: 17px;
+}
+
+.authorization-question {
+  width: 320px;
+  height: auto;
+  box-sizing: border-box;
+  padding: 20px;
+  font-family: "Open Sans", sans-serif, Arial;
+}
+
+.authorization-question-text {
+  font-size: 14px;
+}
+
+.authorization-question-button {
+  height: 28px;
+  line-height: 28px;
+  width: 100px;
+  background: #f85d49;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  float: right;
+  margin-top: 17px;
+  margin-bottom: 15px;
+  display: inline-block;
+  margin: 17px 0 15px 20px;
+}
+
+.is-not-displayed {
+  display: none !important;
+}
+body {
+  font-family: "Open Sans", sans-serif, Arial;
+}
+
+.clearfix::after {
+  visibility: hidden;
+  display: block;
+  content: "";
+  clear: both;
+  height: 0;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Popup</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<div id="popup" class="dark" data-auth="popup-background">
+
+	    <div class="authorization" data-auth="form">
+	        <form class="authorization-reg-form is-not-displayed clearfix" data-auth="form-signup" action="" method="GET">
+	            <a class="authorization-reg-form-sign-in" href="" data-auth="form-signup-to-login">Войти в аккаунт</a>
+	            <h2 class="authorization-reg-form-header">Регистрация</h2>
+	            <input  class="authorization-reg-form-input" data-auth="form-signup-input-email" type="email" placeholder="e-mail">
+
+	            <div class="authorization-reg-form-error is-not-displayed" data-auth="form-signup-input-email-error"></div>
+
+	            <input  class="authorization-reg-form-input" data-auth="form-signup-input-pass" type="password" placeholder="Пароль">
+
+	            <div class="authorization-reg-form-error is-not-displayed" data-auth="form-signup-input-password-error"></div>
+
+	            <input  class="authorization-reg-form-input" data-auth="form-signup-input-pass-repeat" type="password" placeholder="Повторите пароль">
+
+	            <div class="authorization-reg-form-error is-not-displayed" data-auth="form-signup-input-repeat-error"></div>
+
+	            <div class="authorization-reg-form-error is-not-displayed" data-auth="form-signup-input-general-error"></div>
+
+	            <input  class="authorization-reg-form-checkbox" data-auth="form-signup-input-remember-me" type="checkbox" id="remember-me-signup">
+	            <label  class="authorization-reg-form-checklabel" for="remember-me-signup">
+	                Запомнить меня
+	            </label>
+	            <input  class="authorization-reg-form-submit" data-auth="form-signup-submit" type="submit" value="OK">
+	        </form>
+	        <form class="authorization-sign-in-form clearfix" data-auth="form-login" action="" method="GET">
+	            <a class="authorization-sign-in-form-reg" href="" data-auth="form-login-to-signup">Регистрация</a>
+	            <h2 class="authorization-sign-in-form-header">Войти в аккаунт</h2>
+	            <input  class="authorization-sign-in-form-input"  data-auth="form-login-input-email" type="email" placeholder="e-mail" value="igor_sergiienko@epam.com">
+
+	            <div class="authorization-reg-form-error is-not-displayed" data-auth="form-login-input-email-error"></div>
+
+	            <input  class="authorization-sign-in-form-input" data-auth="form-login-input-pass" type="password" placeholder="Пароль" value="11111111">
+
+	            <div class="authorization-reg-form-error is-not-displayed" data-auth="form-login-input-password-error"></div>
+
+	            <div class="authorization-reg-form-error is-not-displayed" data-auth="form-login-input-general-error"></div>
+
+	            <input  class="authorization-sign-in-form-checkbox" data-auth="form-login-input-remember-me" type="checkbox" id="remember-me-sign-in" checked>
+	            <label  class="authorization-sign-in-form-checklabel" for="remember-me-sign-in">
+	                Запомнить меня
+	            </label>
+	            <input  class="authorization-sign-in-form-submit" data-auth="form-login-submit" type="button" value="OK" onclick=fade1()>
+	        </form>
+	        
+	        <div class="authorization-success clearfix is-not-displayed" data-auth="success">
+	            <div class="authorization-success-text" data-auth="success-text">Спасибо Вам за регистрацию. Наслаждайтесь :)</div>
+	            <button class="authorization-success-submit" data-auth="success-button" onclick=fade2()>OK</button>
+	        </div>
+
+	        <div class="authorization-question clearfix is-not-displayed" data-auth="question" >
+	            <div class="authorization-question-text">Сохранить текущий список желаний в Ваш аккаунт?</div>
+	            <button class="authorization-question-button yes">Да</button>
+	            <button class="authorization-question-button no">Нет</button>
+	        </div>
+
+
+	    </div>
+	    </div>
+	</div>
+
+	<script src="popup.js"></script>
+</body>
+</html>
