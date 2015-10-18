@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Slider</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<div class="carpage-wrapper">
+			<div class="carpage-content">
+					<div class="carpage-content-details">
+						<div class="carpage-slider">
+							<div class="carpage-slider-container">
+								<div class="carpage-slider-bigimg">
+									<img src="img/img1.jpg" alt="" class="carpage-slider-bigimg__img">
+								</div>
+							</div>
+							<a onclick='nextImg(false)' class="carpage-slider-bigimg-previous">
+								<span class="carpage-slider-bigimg-previous__arrow"></span>
+							</a>
+							<a onclick='nextImg(true)' class="carpage-slider-bigimg-next">
+								<span class="carpage-slider-bigimg-next__arrow"></span>
+							</a>
+							<div class="carpage-slider-carousel">
+									<ul class="carpage-slider-carousel-cars">
+										<li class="carpage-slider-carousel-cars-item">
+											<a href="#" class="carpage-slider-carousel-cars-item-link">
+												<img src="img/img1.jpg" alt="car-image" width="138" height="92" class="carpage-slider-carousel-cars-item-link__img active">
+												<div class="carpage-slider-carousel-cars-item-link__dark"></div>
+											</a>
+										</li>
+										<li class="carpage-slider-carousel-cars-item">
+											<a href="#" class="carpage-slider-carousel-cars-item-link">
+												<img src="img/img2.jpg" alt="car-image" width="138" height="92" class="carpage-slider-carousel-cars-item-link__img">
+												<div class="carpage-slider-carousel-cars-item-link__dark"></div>
+											</a>
+										</li>
+										<li class="carpage-slider-carousel-cars-item">
+											<a href="#" class="carpage-slider-carousel-cars-item-link">
+												<img src="img/img3.jpg" alt="car-image" width="138" height="92" class="carpage-slider-carousel-cars-item-link__img">
+												<div class="carpage-slider-carousel-cars-item-link__dark"></div>
+											</a>
+										</li>
+										<li class="carpage-slider-carousel-cars-item">
+											<a href="#" class="carpage-slider-carousel-cars-item-link">
+												<img src="img/img4.jpg" alt="car-image" width="138" height="92" class="carpage-slider-carousel-cars-item-link__img">
+												<div class="carpage-slider-carousel-cars-item-link__dark"></div>
+											</a>
+										</li>
+									</ul>
+								</div>
+						</div>
+	
+			</div>
+		</div>
+	</div>
+	<script src="slider.js">
+	</script>
+</body>
+</html>
