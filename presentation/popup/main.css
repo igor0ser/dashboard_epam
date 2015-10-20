@@ -13,7 +13,7 @@ body {
 }
 
 *{
-  ouline: none;
+  outline: none;
 }
 
 .clearfix::after {
